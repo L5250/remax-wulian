@@ -1,9 +1,34 @@
-/* page {
-  background: #282c34;
-} */
+page {
+  background: #dedede5c;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+div,
+view {
+  box-sizing: border-box;
+}
+
 
 input {
   border: 1px solid #ccc;
   border-radius: 4px;
   padding: 0 10px;
+  background: #ffffff;
+}
+
+/* 金额字体 */
+.moneyFont {
+  font-size: large;
+  color: #f40;
+}
+
+.moneyFont::before {
+  content: "¥";
+  font-size: medium;
+}
+
+/* 小号字体 */
+.smallFont {
+  font-size: smaller;
 }

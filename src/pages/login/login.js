@@ -3,7 +3,7 @@ import { useState, useEffect } from 'react'
 import { useQuery, usePageInstance, useNativeEffect } from 'remax'
 import {View, Text, Form, Input, Label, Button, Image } from 'remax/wechat';
 import styles from './login.less'
-import wxrequest from '../../../public/util/wxrequest';
+import wxrequest from '/util/wxrequest';
 
 export default () => {
 
@@ -27,7 +27,7 @@ export default () => {
                 <View className={styles.form_item}>
                     <Label className={styles.form_item_input}>密码：<Input name="password" /></Label>
                 </View>
-                <Button style={{ textAlign: "center" }} type={"primary"} form-type="submit">登录</Button>
+                <Button style={{ textAlign: "center" }} type="primary" form-type="submit">登录</Button>
                 {/* <Button style={{ textAlign: "center" }} type={"primary"} formType="reset" size="mini">重置</Button> */}
             </Form>
         </View>

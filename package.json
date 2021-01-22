@@ -8,6 +8,7 @@
   "author": "L5250 <915016964@qq.com>",
   "license": "MIT",
   "scripts": {
+    "start": "remax build -w -t wechat",
     "dev": "remax build -w -t",
     "build": "cross-env NODE_ENV=production remax build -t"
   },

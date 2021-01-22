@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useState, useEffect } from 'react'
 import { useQuery, usePageInstance, useNativeEffect } from 'remax'
 import { View, Text, Image, Button } from 'remax/one';
-import Login from '../login/index'
+import Login from '../login/login'
 import styles from './index.css';
 
 

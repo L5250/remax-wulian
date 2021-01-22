@@ -16,17 +16,15 @@ function wxrequest(method, url, data) {
         let header = {
             'content-type': 'application/json',
         };
-        console.log(resolve, reject);
         request({
             url: baseURL + url,
             method: method,
             data: method === POST ? JSON.stringify(data) : data,
             header: header,
             success(res) {
-                console.log(res);
                 //请求成功
                 //判断状态码---errCode状态根据后端定义来判断
-                if (res.data.errCode == 0) {
+                if (res.data.code == 200) {
                     resolve(res);
                 } else {
                     //其他异常

@@ -8,7 +8,7 @@ export default () => {
 
     const gotoLogin = () => {
         switchTab({
-            url: "/pages/login/index", events: { name: "home" }, success: () => {
+            url: "/pages/login", events: { name: "home" }, success: () => {
                 console.log("success")
             }
         })
